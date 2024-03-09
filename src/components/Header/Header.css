@@ -1,0 +1,159 @@
+/* .header {
+    margin: 0 2.5rem;
+    padding: .5rem 0;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerleft,
+.headerright {
+    display: flex;
+    align-items: center;
+}
+
+a > span {
+    margin: 0 15px; 
+    cursor: pointer;
+    color: white;
+}
+
+a > span:hover {
+    color: red;
+}
+
+
+.header_icon {
+    width: 80px;
+    cursor: pointer;
+    height: auto;
+}
+
+.user_avatar {
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .headerleft,
+    .headerright {
+        flex-direction: row; 
+        align-items: center;
+    }
+
+    a > span {
+        margin: 0 15px; 
+        font-size: 1rem; 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header_icon {
+        width: 60px;
+    }
+
+    a > span {
+        margin: 0 10px; 
+        font-size: 0.8rem; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header {
+        margin: 0 1rem;
+    }
+
+    .header_icon {
+        width: 40px;
+    }
+
+    a > span {
+        margin: 0 5px; 
+        font-size: 0.6rem; 
+    }
+}
+ */
+
+
+ .header {
+    margin: 0 2.5rem;
+    padding: .5rem 0;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerleft,
+.headerright {
+    display: flex;
+    align-items: center;
+}
+
+a > span {
+    margin: 0 15px; /* Adjusted margin */
+    cursor: pointer;
+    color: white;
+    position: relative; /* Added */
+}
+
+a > span:hover {
+    color: white; /* Added */
+}
+
+a > span:hover::after {
+    content: ''; /* Added */
+    position: absolute; /* Added */
+    left: 0; /* Added */
+    right: 0; /* Added */
+    bottom: -10px; /* Adjusted */
+    height: 3px; /* Adjusted */
+    background-color: red; /* Added */
+}
+
+.header_icon {
+    width: 80px;
+    cursor: pointer;
+    height: auto;
+}
+
+.user_avatar {
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .headerleft,
+    .headerright {
+        flex-direction: row; /* Maintain elements in one line */
+        align-items: center;
+    }
+
+    a > span {
+        margin: 0 15px; /* Adjusted margin */
+        font-size: 1rem; /* Adjusted font size */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header_icon {
+        width: 60px;
+    }
+
+    a > span {
+        margin: 0 10px; /* Adjusted margin */
+        font-size: 0.8rem; /* Adjusted font size */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header {
+        margin: 0 1rem;
+    }
+
+    .header_icon {
+        width: 40px;
+    }
+
+    a > span {
+        margin: 0 5px; /* Adjusted margin */
+        font-size: 0.6rem; /* Adjusted font size */
+    }
+}

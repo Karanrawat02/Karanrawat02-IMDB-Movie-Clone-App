@@ -1,0 +1,166 @@
+.movie {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.movie_intro {
+    width: 100%;
+}
+
+.movie_backdrop {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+}
+
+.movie_detail {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: -6rem;
+}
+
+.movie_detailLeft {
+    margin-right: 1rem;
+}
+
+.movie_poster {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.86) 0px 22px 40px 6px;
+    margin: 20px;
+}
+
+.movie_detailRight {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.movie_detailRightTop > div {
+    margin-bottom: 0.5rem;
+}
+
+.movie_name {
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.movie_tagline {
+    font-style: italic;
+}
+
+.movie_rating {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.movie_voteCount {
+    margin-left: 1rem;
+}
+
+.movie_runtime,
+.movie_releaseDate {
+    margin-top: 0.5rem;
+}
+
+.movie_genres {
+    margin: 1rem 0;
+}
+
+.movie_genre {
+    padding: 0.5rem;
+    border: 2px solid white;
+    border-radius: 20px;
+    margin-right: 0.5rem;
+}
+
+.movie_detailRightBottom {
+    margin: 2rem 0;
+}
+
+.synopsisText {
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.synopsisText > div:last-of-type {
+    margin-left: auto;
+}
+
+.movie_links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+
+.movie_heading {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+.movie_Button {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.8rem 2rem;
+    border-radius: 20px;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.movie_homeButton {
+    background-color: rgb(255, 0, 0);
+}
+
+.movie_imdbButton {
+    background-color: #f3ce13;
+}
+
+.newTab {
+    margin-left: 1.4rem;
+}
+
+.movie_production {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 4rem;
+}
+
+.movie_productionComapany {
+    width: 200px;
+    margin: 2rem;
+}
+
+.productionCompanyImage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+    .movie_backdrop {
+        height: 300px; /* Adjusted height for smaller screens */
+    }
+    
+    .movie_poster {
+        width: 200px; /* Adjusted width for smaller screens */
+    }
+}
